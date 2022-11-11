@@ -11,7 +11,7 @@ const Layout = () => {
       <Meta title="Welcome" />
       <NavBar />
       <Container
-        maxWidth="lg"
+        maxWidth="xl"
         sx={{
           my: 4,
         }}

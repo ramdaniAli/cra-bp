@@ -23,9 +23,6 @@ const CookieConsentBanner = (props) => {
     title = "Cookies consent !",
     acceptButtonLabel = "Accept",
     rejectButtonLabel = "Reject",
-    debug = false,
-    hideOnAccept = true,
-    hideOnReject = true,
     snackbarAnchor = {
       horizontal: "center",
       vertical: "bottom",
@@ -43,28 +40,24 @@ const CookieConsentBanner = (props) => {
   const userConsent = useSelector(userConsentSelector);
 
   useEffect(() => {
-    if (debug || !userConsent) {
+    if (!userConsent) {
       setvisible(true);
     }
-  }, [debug, userConsent]);
+  }, [userConsent]);
 
   const handleAccept = () => {
     if (onAccept) {
       onAccept();
     }
 
-    if (hideOnAccept) {
-      setvisible(false);
-    }
+    setvisible(false);
   };
 
   const handleReject = () => {
     if (onReject) {
       onReject();
     }
-    if (hideOnReject) {
-      setvisible(false);
-    }
+    setvisible(false);
   };
 
   const childrenWithProps = Children.map((children, child) =>

@@ -11,7 +11,7 @@ const NoData = ({
   text,
   illustration = assets.images.noData,
   textColor = "primary",
-  btnText = "Go back to shop",
+  btnText = "Go back home",
   withBtnRedirect = true,
   redirectUrl = routes_list.index,
 }) => {

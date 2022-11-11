@@ -14,7 +14,7 @@ const ThemeSwitch = () => {
   return (
     <Tooltip title="Switch theme" arrow>
       <IconButton onClick={handleToggleTheme}>
-        {mode === "dark" ? <LightMode /> : <DarkMode />}
+        {mode === "dark" ? <DarkMode /> : <LightMode />}
       </IconButton>
     </Tooltip>
   );

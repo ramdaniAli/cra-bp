@@ -6,7 +6,6 @@ import { CssBaseline } from "@mui/material";
 import AppErrorBoundaryFallback from "app/error_handling/AppErrorBoundaryFallback";
 import withErrorHandling from "app/error_handling";
 import CookieConsentBanner from "components/CookieConsentBanner";
-import isDevMode from "utils/isDevMode";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -26,7 +25,6 @@ function App() {
         autoClose={5000}
       />
       <CookieConsentBanner
-        debug={isDevMode}
         title="We use cookies"
         message="This site use cookies to offer you a better browsing experience."
         acceptButtonLabel="Accept cookies"

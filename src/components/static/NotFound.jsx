@@ -23,7 +23,7 @@ const NotFound = () => {
         <img src={assets.images.notFound} alt="not found" />
         <CustomButton
           onClick={() => navigate(routes_list.index)}
-          text="Go back to shop"
+          text="Go back to home"
         />
       </Stack>
     </Container>

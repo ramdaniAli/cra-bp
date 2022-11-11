@@ -19,7 +19,6 @@ const SignInLayout = () => {
         }}
       >
         <SignIn />
-        <CustomLink text="Sign up with Email here" url={routes_list.signup} />
         <CustomLink
           text="Forget passoword ?"
           url={routes_list.forget_password}
